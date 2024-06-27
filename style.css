@@ -1,0 +1,141 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  background: hsl(222, 26%, 31%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.row{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  gap: 180px;
+}
+
+.calcul{
+  background-color: hsl(223, 31%, 20%);
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.calculator form input{
+  border: 0;
+  outline: 0;
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 0px hsl(28, 16%, 65%);
+  background: hsl(30, 25%, 89%);
+  font-size: 20px;
+  color: hsl(224, 28%, 35%);
+  cursor: pointer;
+  margin: 10px;
+  font-weight: 800;
+  cursor: pointer;
+}
+.calculator form input:hover{
+  background-color: hsl(0, 0%, 100%);
+  transition: 2s ease;
+  transform: translateY(5px);
+}
+.calculator .del{
+  background-color: hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 3px 0px hsl(225, 21%, 49%);
+}
+.calculator .del:hover{
+  background: hsl(225, 21%, 49%);
+}
+form .display{
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px -10px;
+}
+form .display input{
+  text-align: right;
+  flex: 1;
+  font-size: 35px;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background-color: hsl(223, 31%, 20%);
+  color: hsl(0, 0%, 100%);
+  padding: 40px 20px;
+}
+form .display input:hover{
+  background-color: hsl(223, 31%, 20%);
+}
+form input.reset{
+  width: 185px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 28%, 35%);
+  box-shadow: 0px 3px 0px hsl(225, 21%, 49%);
+}
+form input.reset:hover{
+  background: hsl(225, 21%, 49%);
+}
+form input.equal{
+  width: 185px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(6, 70%, 34%);
+  box-shadow: 0px 3px 0px hsl(6, 63%, 50%);
+}
+form input.equal:hover{
+  background-color: hsl(6, 63%, 50%);
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 375px) {
+  .calcul{
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+  .calculator form input{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    /* box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2); */
+    background: hsl(30, 25%, 89%);
+    font-size: 15px;
+    color: hsl(224, 28%, 35%);
+    cursor: pointer;
+    margin: 10px;
+    font-weight: 800;
+  }
+  .calculator form input:hover{
+    background-color: hsl(0, 0%, 100%);
+  }
+  form input.reset{
+    width: 125px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 28%, 35%);
+  }
+  form input.reset:hover{
+    background: hsl(225, 21%, 49%);
+  }
+  form input.equal{
+    width: 125px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(6, 70%, 34%);
+  }
+  form input.equal:hover{
+    background-color: hsl(6, 63%, 50%);
+  }
+  form .display input{
+    font-size: 30px;
+    background-color: hsl(223, 31%, 20%);
+    color: hsl(0, 0%, 100%);
+    padding: 40px 20px;
+  }
+}
